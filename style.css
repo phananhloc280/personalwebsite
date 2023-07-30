@@ -39,6 +39,9 @@ body {
     color: var(--text-bg-color);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -109,6 +112,28 @@ section {
 }
 
 /*------------------Home Style---------------------*/
+
+#downloadCV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#downloadCV a {
+    border: solid 2px white;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+#downloadCV a:hover {
+    background-color:#FB6100 ;
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease;
+}
 
 #block__home-section {
     height: 100%;

@@ -14,18 +14,17 @@ function showSlides(n) {
     let thumbnails = document.getElementsByClassName("demo");
     let activitiesDetail = document.getElementsByClassName("block__activitiesDetail")
 
-    // Reset all slides to be hidden
+
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
         activitiesDetail[i].style.display = "none";
     }
 
-    // Remove active-thumbnail class from all thumbnails
+   
     for (let i = 0; i < thumbnails.length; i++) {
         thumbnails[i].classList.remove("active-thumbnail");
     }
 
-    // Show the selected slide and mark its corresponding thumbnail as active
     if (n > slides.length) {
         slideIndex = 1;
     }
